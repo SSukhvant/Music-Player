@@ -76,8 +76,8 @@ h2 {
     width: 35rem;
     height: 55rem;
     position: auto;
-    background-image: url();
-    background-position: auto;
+    background-image: url(https://github.com/SSukhvant/Music-Player/blob/main/bgimg/Heart.png);
+    background-position: center;
     background-origin: padding-box;
     border-color: thistle;
     padding: 2rem 2rem 30rem 1rem;

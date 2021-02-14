@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap');
+/* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+
+    font-family: "Jost", sans-serif;
+}
+
+.main_div {
+    width: 100vw;
+    height: 100vh;
+    position: auto;
+    background-image: url(http://www.pngall.com/wp-content/uploads/3/Heart-Transparent-Images.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+/** CSS TEXT FALLBACK **/
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 01.2rem;
+    word-spacing: 00.5rem;
+    color: #ac1a1a;
+    margin: 5rem 150rem 5rem 3rem;
+    font-size: 1.7rem;
+    font-weight: 700;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 01.2rem;
+    word-spacing: 00.5rem;
+    color: #ac1a1a;
+    margin: 0 50rem 1rem 3rem;
+    font-size: 2.2rem;
+    font-weight: 1000;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+/* h7 {
+    text-transform: uppercase;
+    letter-spacing: 01.2rem;
+    word-spacing: 00.5rem;
+    color: #faf9f9;
+    margin: 0 70rem 10rem 3rem;
+    font-size: 2.7rem;
+    font-weight: 1000;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3); 
+}
+*/
+
+.msg {
+    width: 35rem;
+    height: 55rem;
+    position: auto;
+   /* background-image: url(https://image.freepik.com/free-vector/love-background-design_1270-19.jpg); */
+    background-position: auto;
+    background-origin: padding-box;
+    border-color: thistle;
+    padding: 2rem 2rem 30rem 1rem;
+    border-radius: 2rem;
+    box-shadow: 0 1.3rem 4rem 1rem rgba(0, 0, 0, 0.2);
+    margin-left: 5rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+/*
+.heart {
+    width: 50rem;
+    height: 70rem;
+    position: auto; */
+  /*  background-image: url(http://www.pngall.com/wp-content/uploads/3/Heart-Transparent-Images.png); */
+/*    background-position: auto;
+    background-origin: padding-box;
+    border-color: thistle;
+    padding: 10rem 2rem 2rem 5rem;
+    border-radius: 2rem;
+    box-shadow: 0 1.3rem 4rem 1rem rgba(0, 0, 0, 0.2);
+    margin-left: 10rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+} */
+/*place-items: auto | normal | start | end | flex-start | flex-end | self-start | self-end | center | left | right | baseline | first baseline | last baseline | stretch | initial | inherit; */
+.music_container {
+    width: 35rem;
+    height: 55rem;
+    margin-left: 2rem;
+   /* background-color: #FFE4E1; */
+    border-radius: 2rem;
+    box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.2);
+    padding: 3rem;
+    text-align: center;
+}
+
+.music_container #title {
+    text-transform: uppercase;
+    letter-spacing: 01.2rem;
+    word-spacing: 00.5rem;
+    color: #171717;
+    margin: 2rem 0 0.5rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+.music_container #artist {
+    color: #cccaca;
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    font-weight: 300;
+}
+
+.img-container {
+    width: 25rem;
+    height: 25rem;
+    margin: auto;
+}
+
+img {
+    /* make the img object fit and circle */
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.4);
+}
+.music_controls{
+    width: 20rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 5rem;
+}
+.music-controls .fas {
+    color: #111111;
+    font-size: 2rem;
+    cursor: pointer;
+    filter: drop-shadow(0 1.2rem 3rem 0.5rem rgba(0,0,0, 0.4));
+}
+
+.music_controls .main_button {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: #111;
+    color: #f6f6f6;
+/* add display flex to center the icons */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.music_controls .fa-play:hover {
+    color: grey;
+}
+
+.music_controls .fa-play:hover {
+    background-color: #f6f6f6;
+    color: #111;
+    box-shadow: 0 1rem 2rem 0.2rem rgba(0, 0, 0, 0.4);
+}
+
+/*add anime class to animate */
+.anime {
+    animation: rotatePlayer 3s linear infinite;
+}
+
+@keyframes rotatePlayer {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

@@ -55,9 +55,9 @@ html {
   }
   
   .circle3 {
-    background-color: #f8c1c4;
-    width: 36rem;
-    height: 56rem;
+   /** background-color: #f8c1c4; **/
+    width: 35rem;
+    height: 55rem;
   }
 
 

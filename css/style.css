@@ -30,7 +30,6 @@ html {
 .music_container {
     width: 35rem;
     height: 55rem;
-    margin-left: 2rem;
     background-color: #fbe6e7;
     border-radius: 2rem;
     box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.2);

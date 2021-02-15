@@ -1,16 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap');
 /* Media Queries: Tablet Landscape */
-@media screen and (max-width: 1060px) {
-    #primary { width:67%; }
-    #secondary { width:30%; margin-left:3%;}  
-}
-
-/* Media Queries: Tabled Portrait */
-@media screen and (max-width: 768px) {
-    #primary { width:100%; }
-    #secondary { width:100%; margin:0; border:none; }
-}
-
 *,
 *::before,
 *::after {
@@ -29,81 +18,14 @@ html {
     width: 100vw;
     height: 100vh;
     position: auto;
-    background-image: url(http://www.pngall.com/wp-content/uploads/3/Heart-Transparent-Images.png);
+    background-color: whitesmoke;
     background-position: center;
     background-repeat: no-repeat;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     place-items: center;
 }
 
-/** CSS TEXT FALLBACK **/
-
-h1 {
-    text-transform: uppercase;
-    letter-spacing: 01.2rem;
-    word-spacing: 00.5rem;
-    color: #ac1a1a;
-    margin: 5rem 150rem 5rem 3rem;
-    font-size: 1.7rem;
-    font-weight: 700;
-    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
-}
-
-h2 {
-    text-transform: uppercase;
-    letter-spacing: 01.2rem;
-    word-spacing: 00.5rem;
-    color: #ac1a1a;
-    margin: 0 50rem 1rem 3rem;
-    font-size: 2.2rem;
-    font-weight: 1000;
-    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
-}
-/* h7 {
-    text-transform: uppercase;
-    letter-spacing: 01.2rem;
-    word-spacing: 00.5rem;
-    color: #faf9f9;
-    margin: 0 70rem 10rem 3rem;
-    font-size: 2.7rem;
-    font-weight: 1000;
-    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3); 
-}
-*/
-
-.msg {
-    width: 35rem;
-    height: 55rem;
-    position: auto;
-    background-image: url(https://github.com/SSukhvant/Music-Player/blob/main/bgimg/Heart.png);
-    background-position: center;
-    background-origin: padding-box;
-    border-color: thistle;
-    padding: 2rem 2rem 30rem 1rem;
-    border-radius: 2rem;
-    box-shadow: 0 1.3rem 4rem 1rem rgba(0, 0, 0, 0.2);
-    margin-left: 5rem;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-}
-/*
-.heart {
-    width: 50rem;
-    height: 70rem;
-    position: auto; */
-  /*  background-image: url(http://www.pngall.com/wp-content/uploads/3/Heart-Transparent-Images.png); */
-/*    background-position: auto;
-    background-origin: padding-box;
-    border-color: thistle;
-    padding: 10rem 2rem 2rem 5rem;
-    border-radius: 2rem;
-    box-shadow: 0 1.3rem 4rem 1rem rgba(0, 0, 0, 0.2);
-    margin-left: 10rem;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-
-} */
 /*place-items: auto | normal | start | end | flex-start | flex-end | self-start | self-end | center | left | right | baseline | first baseline | last baseline | stretch | initial | inherit; */
 .music_container {
     width: 35rem;

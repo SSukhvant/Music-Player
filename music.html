@@ -11,9 +11,21 @@
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="shortcut icon" type="image/jpg" href="https://icons-for-free.com/iconfiles/png/512/music+note+sound+icon-1320183235697157602.png"/>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat'>
+
 </head>
 <body>
     <div class="main_div">
+
+    <!-- partial:index.partial.html -->
+    <div class="img-container">
+    </div>
+    <div class="preloader">
+        <div class="circle circle1"></div>
+        <div class="circle circle2"></div>
+        <div class="circle circle3">
+
 
     <div class="music_container">
             <h2 id="title">PAL PAL</h2>
@@ -32,10 +44,20 @@
             </div>
 
     </div>
-        
+    </div>
     </div>
 
+        
+    </div>
+    
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="./script.js"></script>
+
+
+
     <script>
+
         const music = document.querySelector("audio");
         const img = document.querySelector("img");
         const play = document.getElementById("play");
@@ -130,6 +152,8 @@
 
     next.addEventListener("click", nextSong);
     prev.addEventListener("click", prevSong);
+
+
     </script>
 </body>
 </html>

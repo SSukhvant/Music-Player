@@ -14,10 +14,57 @@ html {
     font-family: "Jost", sans-serif;
 }
 
+.img-container {
+    background-position:center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    position: absolute;
+  }
+
+.preloader {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    z-index: 10;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    
+  }
+  
+  .circle {
+    border-radius: 2rem;
+    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.4);
+    position: absolute;
+    opacity: 0;
+  }
+  
+  .circle1 {
+    background-color: #ff1b26;
+    width: 38rem;
+    height: 58rem;
+  }
+  
+  .circle2 {
+    background-color: #fb7f85;
+    width: 37rem;
+    height: 57rem;
+  }
+  
+  .circle3 {
+    background-color: #f8c1c4;
+    width: 36rem;
+    height: 56rem;
+  }
+
+
+
 .main_div {
     width: 100vw;
     height: 100vh;
-    position: auto;
     background-color: #f7ced0;
     background-position: center;
     background-repeat: no-repeat;
@@ -26,8 +73,11 @@ html {
     place-items: center;
 }
 
+
+
 /*place-items: auto | normal | start | end | flex-start | flex-end | self-start | self-end | center | left | right | baseline | first baseline | last baseline | stretch | initial | inherit; */
 .music_container {
+    position: relative;
     width: 35rem;
     height: 55rem;
     background-color: #fbe6e7;
@@ -35,6 +85,7 @@ html {
     box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.2);
     padding: 3rem;
     text-align: center;
+
 }
 
 .music_container #title {

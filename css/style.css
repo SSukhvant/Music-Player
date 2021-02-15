@@ -18,7 +18,7 @@ html {
     width: 100vw;
     height: 100vh;
     position: auto;
-    background-color: whitesmoke;
+    background-color: #f7ced0;
     background-position: center;
     background-repeat: no-repeat;
     display: grid;
@@ -31,7 +31,7 @@ html {
     width: 35rem;
     height: 55rem;
     margin-left: 2rem;
-   /* background-color: #FFE4E1; */
+    background-color: #fbe6e7;
     border-radius: 2rem;
     box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.2);
     padding: 3rem;
@@ -78,11 +78,11 @@ img {
     justify-content: space-between;
     align-items: center;
     margin: auto;
-    margin-top: 5rem;
+    margin-top: 7rem;
 }
-.music-controls .fas {
+.music_controls .fas {
     color: #111111;
-    font-size: 2rem;
+    font-size: 4rem;
     cursor: pointer;
     filter: drop-shadow(0 1.2rem 3rem 0.5rem rgba(0,0,0, 0.4));
 }

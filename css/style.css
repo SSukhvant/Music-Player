@@ -22,47 +22,6 @@ html {
     z-index: 5;
     position: absolute;
   }
-/**
-.preloader {
-    width: 100%;
-    height: 100%;
-    background-color: #ffffff;
-    z-index: 10;
-    position: absolute;
-    display: grid;
-    grid-template-columns: 1fr;
-    place-items: center;
-    
-  }
-  
-  .circle {
-    border-radius: 2rem;
-    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.4);
-    position: absolute;
-    opacity: 0;
-  }
-  
-  .circle1 {
-    background-color: #ff1b26;
-    width: 38rem;
-    height: 58rem;
-  }
-  
-  .circle2 {
-    background-color: #fb7f85;
-    width: 37rem;
-    height: 57rem;
-  }
-  
-  .circle3 {
-    background-color: #f8c1c4;
-    width: 35rem;
-    height: 55rem;
-  }
-
-**/
-
-
 
 .main_div {
     width: 100vw;
@@ -86,9 +45,9 @@ html {
     border-radius: 2rem;
     box-shadow: -10px -10px 15px rgba(255,255, 255, 0.5), 10px 10px 15px rgba(70, 70, 70, 0.12);
   /*  box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.2); */
-    padding: 3rem;
-    border: 1px solid #ececec;
+    border: 0.05px solid #f3f2f2;
     outline: none;
+    padding: 3rem;
     text-align: center;
 
 }
@@ -147,23 +106,23 @@ img {
     height: 5rem;
     border-radius: 50%;
     background-color: #ffffff;
-    color: #f6f6f6;
+    color: #7a7a7a;
 /* add display flex to center the icons */
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.4rem;
+    font-size: 2.7rem;
 }
 
 input[type="checkbox"]{
     height: 80px;
     width: 80px;
     -webkit-appearance: none;
-    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
-    10px 10px 15px rgba(70,70,70,0.12);
+    box-shadow: /*-10px -10px 15px rgba(255, 255, 255, 0.5),*/
+    10px 10px 15px rgba(70, 70, 70, 0.12);
     position: absolute;
     border-radius: 50%;
-    border: .5px solid #ececec;
+    border: 0px solid #ececec;
     outline: none;
     display: flex;
     align-items: center;
@@ -172,7 +131,7 @@ input[type="checkbox"]{
 }
 input[type="checkbox"]:after{
     font-family: FontAwesome;
-    content: '\f04b';
+    /*content: '\f04b';*/
     color: #7a7a7a;
     font-size: 40px;
 }
@@ -182,12 +141,17 @@ input[type="checkbox"]:checked{
     10px 10px 15px rgba(70,70,70,0.12),
     inset -10px -10px 15px rgba(255, 255, 255, 0.5),
     inset 10px 10px 15px rgba(70,70,70,0.12);
+    border: 2px solid #ececec;
+    outline: none;
 }
 input[type="checkbox"]:checked:after{
     color: #15e38a;
 }
-/*
-.music_controls .fa-play:hover {
+
+.music_controls .fa-pause {
+    color: #15e38a;
+}
+/*.music_controls .fa-play:hover {
     color: grey;
 }
 
@@ -196,7 +160,7 @@ input[type="checkbox"]:checked:after{
     color: #111;
     box-shadow: 0 1rem 2rem 0.2rem rgba(0, 0, 0, 0.4);
 }
-*/
+
 /*add anime class to animate */
 .anime {
     animation: rotatePlayer 3s linear infinite;

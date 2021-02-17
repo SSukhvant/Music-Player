@@ -67,7 +67,7 @@ html {
 .main_div {
     width: 100vw;
     height: 100vh;
-    background-color: #f7ced0;
+    background-color: #ffffff;
     background-position: center;
     background-repeat: no-repeat;
     display: grid;
@@ -82,10 +82,13 @@ html {
     position: relative;
     width: 35rem;
     height: 55rem;
-    background-color: #fbe6e7;
+    -webkit-appearance: none;
     border-radius: 2rem;
-    box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.2);
+    box-shadow: -10px -10px 15px rgba(255,255, 255, 0.5), 10px 10px 15px rgba(70, 70, 70, 0.12);
+  /*  box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.2); */
     padding: 3rem;
+    border: 8px solid #ececec;
+    outline: none;
     text-align: center;
 
 }

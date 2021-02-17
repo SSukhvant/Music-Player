@@ -87,7 +87,7 @@ html {
     box-shadow: -10px -10px 15px rgba(255,255, 255, 0.5), 10px 10px 15px rgba(70, 70, 70, 0.12);
   /*  box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.2); */
     padding: 3rem;
-    border: 8px solid #ececec;
+    border: 1px solid #ececec;
     outline: none;
     text-align: center;
 
@@ -136,7 +136,7 @@ img {
     margin-top: 7rem;
 }
 .music_controls .fas {
-    color: #111111;
+    color: #7a7a7a;
     font-size: 4rem;
     cursor: pointer;
     filter: drop-shadow(0 1.2rem 3rem 0.5rem rgba(0,0,0, 0.4));
@@ -146,7 +146,7 @@ img {
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
-    background-color: #111;
+    background-color: #ffffff;
     color: #f6f6f6;
 /* add display flex to center the icons */
     display: flex;
@@ -155,6 +155,38 @@ img {
     font-size: 1.4rem;
 }
 
+input[type="checkbox"]{
+    height: 80px;
+    width: 80px;
+    -webkit-appearance: none;
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+    10px 10px 15px rgba(70,70,70,0.12);
+    position: absolute;
+    border-radius: 50%;
+    border: .5px solid #ececec;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+input[type="checkbox"]:after{
+    font-family: FontAwesome;
+    content: '\f04b';
+    color: #7a7a7a;
+    font-size: 40px;
+}
+
+input[type="checkbox"]:checked{
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+    10px 10px 15px rgba(70,70,70,0.12),
+    inset -10px -10px 15px rgba(255, 255, 255, 0.5),
+    inset 10px 10px 15px rgba(70,70,70,0.12);
+}
+input[type="checkbox"]:checked:after{
+    color: #15e38a;
+}
+/*
 .music_controls .fa-play:hover {
     color: grey;
 }
@@ -164,7 +196,7 @@ img {
     color: #111;
     box-shadow: 0 1rem 2rem 0.2rem rgba(0, 0, 0, 0.4);
 }
-
+*/
 /*add anime class to animate */
 .anime {
     animation: rotatePlayer 3s linear infinite;
